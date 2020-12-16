@@ -1,6 +1,6 @@
 import React from "react";
 
-export function Cell({ id, disabled, onClick, xChoice }) {
+export function Cell({ id, disabled, onTarget, xChoice }) {
   const enabledStyle = `
     w-8 
     text-black 
@@ -19,7 +19,7 @@ export function Cell({ id, disabled, onClick, xChoice }) {
     <button
       className={disabled ? disabledStyle : enabledStyle}
       type="button"
-      onClick={() => onClick(id)}
+      onClick={() => onTarget(id)}
       disabled={disabled}
     >
       {xChoice ? "x" : id}

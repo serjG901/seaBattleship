@@ -1,6 +1,6 @@
 import React from "react";
-import { Board } from "./board/Board";
+import { BoardConnect } from "./board/connect/BoardConnect";
 
 export default function App() {
-  return <Board />;
+  return <BoardConnect />;
 }
